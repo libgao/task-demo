@@ -1,0 +1,6 @@
+﻿rule_id,signal,condition,reason_candidates,action,collaborator,sla_hours,allowed_script,forbidden_script
+R1,连续未约课,last_booking_days>=10,时段冲突|动力衰减,电话沟通,社群老师,48,未来14天内可约，每周至少提供3个可选时段,随时退|保证固定外教|保证提分
+R2,约课失败,fail_bookings_7d>=3,老师不匹配|时段不足,协调时段与老师,排课专员,24,未满300课时按学情匹配老师,保证约到某老师|随时退
+R3,耗课滞后,unit_progress>=0.5且耗课<40%,难度不适|节奏问题,与老师确认难度,外教/中教,72,按学情调整练习节奏,保证提分|保证效果
+R4,练习断更,practice_miss_days>=5,动力衰减|任务过重,推轻量任务,社群老师,48,社群每日跟课，任务可拆分,保证效果|保证提分
+R5,情绪信号,"emotion_tag in (提退费,投诉)",服务响应|承诺落差,学情复盘+方案调整,主管,8,未消耗课时按合同梯度扣费，7个工作日内完成退费工单,无条件退费|随时退

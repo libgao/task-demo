@@ -1,0 +1,10 @@
+﻿task_id,parent_feedback,emotion_after,escalated,miscommit_hit,satisfaction_score,recovered_booking
+T003,家长情绪缓和,焦虑,1,0,4,0
+T004,要求退费,正常,0,0,5,1
+T005,家长情绪缓和,不满,1,0,4,0
+T007,仍不满意,不满,0,1,3,0
+T008,已恢复约课,中性,0,1,5,1
+T010,仍不满意,不满,0,0,4,1
+T011,仍不满意,中性,1,0,3,0
+T013,已协调时段,中性,0,1,5,1
+T014,已恢复约课,不满,0,0,5,1
